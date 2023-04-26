@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <link rel="stylesheet" type="text/css" href="css.css">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    
+<div class="topnav">
+  <a class="active" href="Home.aspx"><font face="Impact" size="60">Home</font></a>
+  <a href="Quiz.aspx"><font face="Impact" size="60">Gamers Quiz</font></a>
+  <a href="News.aspx"><font face="Impact" size="60">Gaming News</font></a>
+  <a href="Register.aspx"><font face="Impact" size="60">Register</font></a>
+    <a href="Login.aspx"><font face="Impact" size="60">Login</font></a>
+   <a href="About.aspx"><font face="Impact" size="60">About</font></a>
+    <a href="Links.aspx"><font face="Impact" size="60">More Links</font></a>
+    
+</div>
+    <id="userNm" style="text-align:right">Hello <%=logedInUsr %> 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <!--per page>> <-->
+        </asp:ContentPlaceHolder>
+   
+</body>
+</html>
